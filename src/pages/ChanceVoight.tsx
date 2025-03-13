@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Building, ChartBar, Globe, ShieldCheck, TrendingUp, Users } from 'lucide-react';
+import { Building, ChartBar, Globe, ShieldCheck, TrendingUp, Users, Instagram, Facebook, Twitter } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
@@ -52,15 +52,15 @@ const ChanceVoight = () => {
               <h2 className="font-serif text-3xl md:text-4xl font-bold text-navy-900 mb-6">Company Overview</h2>
               
               <p className="text-navy-700 leading-relaxed">
-                Founded by Bernard Whimp, Chance Voight Investment Partners has established itself as a leader in strategic investment management, specializing in share investment and commercial property portfolios.
+                Founded in 2018, Chance Voight Investment Partners is a 100% Kiwi-owned investment firm headquartered in North Canterbury. With a team of over 20 professionals, we are committed to providing investors with products that achieve attractive returns and a superior investor experience.
               </p>
               
               <p className="text-navy-700 leading-relaxed">
-                Our firm combines decades of market expertise with innovative analysis techniques to identify high-value opportunities that others might overlook. We pride ourselves on our meticulous research, strategic foresight, and commitment to long-term value creation.
+                Chance Voight has the backing of a highly capable corporate team that has been carefully assembled to take the business forward. Set to command an impressive one billion in capital in the next four years, the team has become a well-oiled machine and is guided relentlessly by the entrepreneur.
               </p>
               
               <p className="text-navy-700 leading-relaxed">
-                At Chance Voight, we believe that successful investment requires both analytical precision and market intuition – qualities that Mr. Whimp has cultivated throughout his distinguished 30-year career in the financial sector.
+                The Chance Voight name has been trademarked in all the major financial centers in the world, ensuring the firm is well-positioned for its global ambitions.
               </p>
             </motion.div>
 
@@ -79,8 +79,8 @@ const ChanceVoight = () => {
                 />
               </div>
               <div className="absolute -bottom-5 -right-5 glass-panel p-4 md:p-6">
-                <p className="font-serif text-navy-900 text-xl font-semibold">Est. 2015</p>
-                <p className="text-navy-600">Auckland, New Zealand</p>
+                <p className="font-serif text-navy-900 text-xl font-semibold">Est. 2018</p>
+                <p className="text-navy-600">North Canterbury, New Zealand</p>
               </div>
             </motion.div>
           </div>
@@ -160,7 +160,7 @@ const ChanceVoight = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <span>Strategic stock selection based on comprehensive market analysis</span>
+                    <span>Focusing primarily on the Australasian financial markets</span>
                   </li>
                   <li className="flex items-start">
                     <div className="mr-3 mt-1 bg-navy-200 rounded-full p-1">
@@ -168,7 +168,7 @@ const ChanceVoight = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <span>Portfolio management and optimization strategies</span>
+                    <span>Dedicated stock picking team specializing in generating excess returns</span>
                   </li>
                   <li className="flex items-start">
                     <div className="mr-3 mt-1 bg-navy-200 rounded-full p-1">
@@ -176,15 +176,7 @@ const ChanceVoight = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <span>Long-term investment planning with regular performance reviews</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="mr-3 mt-1 bg-navy-200 rounded-full p-1">
-                      <svg className="h-3 w-3 text-navy-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
-                      </svg>
-                    </div>
-                    <span>Market trend analysis and forecasting</span>
+                    <span>Expertise in the Australian Stock Market (ASX) and private market share offerings</span>
                   </li>
                 </ul>
               </div>
@@ -199,7 +191,7 @@ const ChanceVoight = () => {
             >
               <div className="absolute top-0 right-0 w-24 h-24 bg-navy-100 rounded-bl-full z-0"></div>
               <div className="relative z-10">
-                <h3 className="font-serif text-2xl font-semibold text-navy-900 mb-4">Commercial Property Investment</h3>
+                <h3 className="font-serif text-2xl font-semibold text-navy-900 mb-4">Fixed-Term Investments</h3>
                 <ul className="space-y-3 text-navy-700">
                   <li className="flex items-start">
                     <div className="mr-3 mt-1 bg-navy-200 rounded-full p-1">
@@ -207,7 +199,7 @@ const ChanceVoight = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <span>Identification of high-potential commercial property opportunities</span>
+                    <span>High-yield, fixed-term, interest rate investments for wholesale investors</span>
                   </li>
                   <li className="flex items-start">
                     <div className="mr-3 mt-1 bg-navy-200 rounded-full p-1">
@@ -215,7 +207,7 @@ const ChanceVoight = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <span>Development and value-enhancement strategies</span>
+                    <span>Funds aimed at delivering premium returns</span>
                   </li>
                   <li className="flex items-start">
                     <div className="mr-3 mt-1 bg-navy-200 rounded-full p-1">
@@ -223,15 +215,7 @@ const ChanceVoight = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <span>Financing solutions and mortgage lending expertise</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="mr-3 mt-1 bg-navy-200 rounded-full p-1">
-                      <svg className="h-3 w-3 text-navy-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
-                      </svg>
-                    </div>
-                    <span>Portfolio diversification through strategic property acquisition</span>
+                    <span>Opportunity to generate a regular income stream or compound returns</span>
                   </li>
                 </ul>
               </div>
@@ -320,6 +304,148 @@ const ChanceVoight = () => {
               </div>
             </motion.div>
           </div>
+        </div>
+      </section>
+
+      {/* Values Section */}
+      <section className="section-padding bg-white">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="max-w-3xl mx-auto text-center mb-16">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-navy-900 mb-6">Our Values</h2>
+            <p className="text-navy-600 leading-relaxed">
+              At Chance Voight Investment Partners, our goal is to create long-term value while managing risk. We are committed to helping New Zealanders make the most of their investment dollar.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="relative"
+            >
+              <div className="aspect-square rounded-xl overflow-hidden shadow-xl">
+                <img 
+                  src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&q=80" 
+                  alt="Chance Voight Values" 
+                  className="object-cover w-full h-full rounded-xl"
+                />
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="space-y-6"
+            >
+              <p className="text-navy-700 leading-relaxed">
+                Chance Voight is a firm dedicated to high-quality relationships with everyone it deals with. Our investors have expressed nothing but positive feedback about their experience with us.
+              </p>
+              
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <div className="mr-4 mt-1">
+                    <div className="bg-navy-100 rounded-full p-2">
+                      <Users size={24} className="text-navy-700" />
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="font-serif text-xl font-semibold text-navy-900 mb-1">Client-Centered</h3>
+                    <p className="text-navy-600">We prioritize our investors' needs and goals, ensuring a superior investor experience.</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <div className="mr-4 mt-1">
+                    <div className="bg-navy-100 rounded-full p-2">
+                      <Globe size={24} className="text-navy-700" />
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="font-serif text-xl font-semibold text-navy-900 mb-1">Global Vision</h3>
+                    <p className="text-navy-600">With trademarks secured in major financial centers, we're positioned for global growth.</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <div className="mr-4 mt-1">
+                    <div className="bg-navy-100 rounded-full p-2">
+                      <Building size={24} className="text-navy-700" />
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="font-serif text-xl font-semibold text-navy-900 mb-1">Kiwi Owned</h3>
+                    <p className="text-navy-600">We take pride in being a 100% New Zealand owned and operated investment firm.</p>
+                  </div>
+                </li>
+              </ul>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Social Media Section */}
+      <section className="section-padding bg-navy-50">
+        <div className="container mx-auto px-4 md:px-6 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="max-w-3xl mx-auto"
+          >
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-navy-900 mb-4">
+              Learn more about Chance Voight Investment Partners
+            </h2>
+            <p className="text-navy-700 text-lg mb-12">
+              Building a billion-dollar business in the Australian stock market (ASX).
+            </p>
+            
+            <div className="flex justify-center space-x-8">
+              <motion.a 
+                href="https://instagram.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group"
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              >
+                <div className="bg-white p-4 rounded-full shadow-lg group-hover:shadow-xl transition-all duration-300">
+                  <Instagram size={32} className="text-navy-800 group-hover:text-pink-600 transition-colors duration-300" />
+                </div>
+                <p className="mt-2 text-navy-700 font-medium">Instagram</p>
+              </motion.a>
+              
+              <motion.a 
+                href="https://facebook.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group"
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              >
+                <div className="bg-white p-4 rounded-full shadow-lg group-hover:shadow-xl transition-all duration-300">
+                  <Facebook size={32} className="text-navy-800 group-hover:text-blue-600 transition-colors duration-300" />
+                </div>
+                <p className="mt-2 text-navy-700 font-medium">Facebook</p>
+              </motion.a>
+              
+              <motion.a 
+                href="https://twitter.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group"
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              >
+                <div className="bg-white p-4 rounded-full shadow-lg group-hover:shadow-xl transition-all duration-300">
+                  <Twitter size={32} className="text-navy-800 group-hover:text-blue-400 transition-colors duration-300" />
+                </div>
+                <p className="mt-2 text-navy-700 font-medium">X</p>
+              </motion.a>
+            </div>
+          </motion.div>
         </div>
       </section>
 
