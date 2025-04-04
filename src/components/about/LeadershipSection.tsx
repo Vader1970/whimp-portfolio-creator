@@ -2,8 +2,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const LeadershipSection = () => {
+  const isMobile = useIsMobile();
+  
   return (
     <section className="section-padding bg-white">
       <div className="container mx-auto px-4 md:px-6">
@@ -41,8 +44,8 @@ const LeadershipSection = () => {
             viewport={{ once: true }}
             className="relative lg:sticky lg:top-32 lg:order-1 lg:self-start"
           >
-            <div className="rounded-xl overflow-hidden shadow-xl max-w-md mx-auto">
-              <AspectRatio ratio={4/5} className="bg-navy-100">
+            <div className="rounded-xl overflow-hidden shadow-xl w-full lg:max-w-md mx-auto">
+              <AspectRatio ratio={isMobile ? 3/4 : 4/5} className="bg-navy-100">
                 <img 
                   src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80" 
                   alt="Bernard Whimp Portrait" 
