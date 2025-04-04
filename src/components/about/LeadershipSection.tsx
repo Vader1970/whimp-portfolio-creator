@@ -39,10 +39,10 @@ const LeadershipSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="relative lg:sticky lg:top-24 lg:order-1"
+            className="relative lg:sticky lg:top-32 lg:order-1 lg:self-start"
           >
-            <div className="rounded-xl overflow-hidden shadow-xl">
-              <AspectRatio ratio={3/4} className="bg-navy-100">
+            <div className="rounded-xl overflow-hidden shadow-xl max-w-md mx-auto">
+              <AspectRatio ratio={4/5} className="bg-navy-100">
                 <img 
                   src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80" 
                   alt="Bernard Whimp Portrait" 
