@@ -1,10 +1,10 @@
-
 import React from 'react';
 import { ArrowRight, Briefcase, Trophy, Users, BarChart4 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import PageTransition from '@/components/PageTransition';
 import { motion } from 'framer-motion';
+import QuotesSection from '@/components/home/QuotesSection';
 
 const Home = () => {
   return (
@@ -105,6 +105,9 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Quotes Section */}
+      <QuotesSection />
 
       {/* About Preview Section */}
       <section className="section-padding bg-navy-900 text-white">
