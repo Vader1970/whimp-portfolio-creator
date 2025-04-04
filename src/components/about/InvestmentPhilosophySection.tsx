@@ -47,7 +47,7 @@ const InvestmentPhilosophySection = () => {
           viewport={{ once: true }}
           className="mt-12 bg-navy-800 p-8 rounded-lg border border-navy-700 text-center"
         >
-          <p className="text-xl md:text-2xl text-white italic">
+          <p className="text-xl md:text-2xl text-white italic mb-6">
             "It is easy to see why it has been speculated by some that Bernard may be one of the greatest company builders and wealth creators in New Zealand today."
           </p>
         </motion.div>
