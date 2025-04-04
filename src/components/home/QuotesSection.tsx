@@ -6,19 +6,23 @@ import { QuoteIcon } from 'lucide-react';
 const quotes = [
   {
     text: "You cannot do what everyone else does and achieve better than average results. To be a good investor, to generate the highest returns, you must go against the consensus thinking.",
-    author: "Bernard Whimp"
+    author: "Bernard Whimp",
+    position: "Chance Voight Investment Corporation Founder and CEO/CIO"
   },
   {
     text: "A proper investor has unhooked their thinking about share prices from what the quoted market price is.",
-    author: "Bernard Whimp"
+    author: "Bernard Whimp",
+    position: "Chance Voight Investment Corporation Founder and CEO/CIO"
   },
   {
     text: "Once you enter the church of deep value investing, everything you do in the stock market will be about buying assets at cents in the dollar.",
-    author: "Bernard Whimp"
+    author: "Bernard Whimp",
+    position: "Chance Voight Investment Corporation Founder and CEO/CIO"
   },
   {
     text: "The best thing you can do for yourself is find a good hedge fund and stick with it.",
-    author: "Bernard Whimp"
+    author: "Bernard Whimp",
+    position: "Chance Voight Investment Corporation Founder and CEO/CIO"
   }
 ];
 
@@ -45,7 +49,10 @@ const QuotesSection = () => {
               <p className="text-navy-800 font-serif text-lg md:text-xl mb-4 leading-relaxed italic">
                 "{quote.text}"
               </p>
-              <p className="text-navy-700 font-medium">— {quote.author}</p>
+              <div>
+                <p className="text-navy-700 font-medium">— {quote.author}</p>
+                <p className="text-navy-600 text-sm mt-1">{quote.position}</p>
+              </div>
             </motion.div>
           ))}
         </div>
