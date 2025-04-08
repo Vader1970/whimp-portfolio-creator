@@ -1,10 +1,78 @@
 
 import React from 'react';
-import { Building, ChartBar, Globe, ShieldCheck, Users } from 'lucide-react';
+import { Building, ChartBar, Globe, MessageSquare, ShieldCheck, Star, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import PageTransition from '@/components/PageTransition';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import { Card, CardContent } from "@/components/ui/card";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+
+const testimonials = [
+  {
+    name: "Sarah Johnson",
+    position: "Small Business Owner",
+    content: "Chance Voight has transformed our investment strategy. Their expertise in the ASX market delivered returns that exceeded our expectations. The team is professional and responsive.",
+    rating: 5,
+    avatar: "SJ"
+  },
+  {
+    name: "David Thompson",
+    position: "Retiree",
+    content: "As someone looking for stable retirement income, their fixed-term investment options have been perfect. The consistent returns allow me to enjoy retirement without financial stress.",
+    rating: 5,
+    avatar: "DT"
+  },
+  {
+    name: "Emma Wilson",
+    position: "Corporate Investor",
+    content: "The team at Chance Voight truly understands the Australasian market. Their insights and personalized approach to investment management have been invaluable to our company.",
+    rating: 5,
+    avatar: "EW"
+  },
+  {
+    name: "Michael Chen",
+    position: "Tech Entrepreneur",
+    content: "Bernard and his team deliver on their promises. Their deep understanding of market trends and commitment to client success makes them stand out in the investment landscape.",
+    rating: 5,
+    avatar: "MC"
+  },
+  {
+    name: "Jessica Parker",
+    position: "Family Trust Manager",
+    content: "Our trust has been with Chance Voight for three years now. The transparency, professional management, and consistent returns have made this partnership incredibly valuable.",
+    rating: 5,
+    avatar: "JP"
+  },
+  {
+    name: "Robert Williams",
+    position: "Property Developer",
+    content: "The diversification strategies suggested by Chance Voight's team helped us weather market fluctuations while maintaining healthy returns. Their expertise is second to none.",
+    rating: 5,
+    avatar: "RW"
+  },
+  {
+    name: "Olivia Evans",
+    position: "Financial Analyst",
+    content: "As someone who works in finance, I appreciate the rigorous approach Chance Voight takes with investments. Their research-driven strategy consistently delivers results.",
+    rating: 5,
+    avatar: "OE"
+  },
+  {
+    name: "James Sullivan",
+    position: "Medical Professional",
+    content: "With limited time to manage my investments, working with Chance Voight has been the best decision. They handle everything professionally while keeping me informed every step of the way.",
+    rating: 5,
+    avatar: "JS"
+  }
+];
 
 const ChanceVoight = () => {
   return (
@@ -130,8 +198,73 @@ const ChanceVoight = () => {
         </div>
       </section>
 
-      {/* Values Section */}
+      {/* Testimonials Section */}
       <section className="section-padding bg-white">
+        <div className="container mx-auto px-4 md:px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="max-w-3xl mx-auto text-center mb-12"
+          >
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-navy-900 mb-6">
+              What Our Clients Say
+            </h2>
+            <p className="text-navy-600 text-lg">
+              Chance Voight is a firm dedicated to high quality relationships with everyone it deals with. Our investors expressed nothing but positive feedback about their experience with us.
+            </p>
+          </motion.div>
+
+          <div className="mt-12">
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              className="w-full"
+            >
+              <CarouselContent>
+                {testimonials.map((testimonial, index) => (
+                  <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3 pl-4">
+                    <Card className="h-full">
+                      <CardContent className="p-6 flex flex-col justify-between h-full">
+                        <div>
+                          <div className="flex items-center mb-4">
+                            {[...Array(testimonial.rating)].map((_, i) => (
+                              <Star key={i} size={16} className="text-yellow-500 fill-yellow-500" />
+                            ))}
+                          </div>
+                          <p className="text-navy-600 mb-6 italic">"{testimonial.content}"</p>
+                        </div>
+                        <div className="flex items-center mt-4">
+                          <Avatar className="h-10 w-10 mr-4">
+                            <AvatarImage src="" alt={testimonial.name} />
+                            <AvatarFallback className="bg-navy-100 text-navy-700">
+                              {testimonial.avatar}
+                            </AvatarFallback>
+                          </Avatar>
+                          <div>
+                            <p className="font-medium text-navy-900">{testimonial.name}</p>
+                            <p className="text-sm text-navy-500">{testimonial.position}</p>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <div className="flex justify-center mt-8 gap-2">
+                <CarouselPrevious className="static transform-none bg-white border border-navy-200 hover:bg-navy-50" />
+                <CarouselNext className="static transform-none bg-white border border-navy-200 hover:bg-navy-50" />
+              </div>
+            </Carousel>
+          </div>
+        </div>
+      </section>
+
+      {/* Values Section */}
+      <section className="section-padding bg-navy-50">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-navy-900 mb-6">Our Values</h2>
@@ -163,10 +296,6 @@ const ChanceVoight = () => {
             >
               <p className="text-navy-700 leading-relaxed">
                 At Chance Voight Investment Partners, our goal is to create long-term value while managing risk. We are committed to helping New Zealanders make the most of their investment dollar.
-              </p>
-              
-              <p className="text-navy-700 leading-relaxed">
-                Chance Voight is a firm dedicated to high quality relationships with everyone it deals with. Our investors expressed nothing but positive feedback about their experience with us.
               </p>
               
               <ul className="space-y-4 pt-4">
@@ -210,7 +339,7 @@ const ChanceVoight = () => {
       </section>
 
       {/* Call to Action Section */}
-      <section className="section-padding bg-navy-50">
+      <section className="section-padding bg-white">
         <div className="container mx-auto px-4 md:px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
