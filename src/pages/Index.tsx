@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowRight, Briefcase, Trophy, Users, BarChart4 } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -108,42 +107,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Quotes Section */}
-      <QuotesSection />
-
-      {/* Chance Voight Founder Section */}
-      <InfoSection 
-        title="Chance Voight Founder"
-        content={
-          <div className="space-y-4">
-            <p className="text-navy-700 leading-relaxed">
-              Chance Voight was established in 2018 with the ambition to develop a profitable New Zealand hedge fund. 
-              Prior to his re-orientation towards the share market over a decade ago, Bernard accumulated extensive experience 
-              as a financier and investor in real estate transactions as well as building financial and investment-related businesses. 
-              Chance Voight was founded as a result of Bernard's cumulative experience and an intensive decade of experience 
-              as a full-time professional share investor in the Australian stock market (ASX).
-            </p>
-            <p className="text-navy-700 leading-relaxed">
-              Currently several years into its development, Chance Voight has established itself as a trusted institution 
-              and has experienced a steep upward trajectory towards its billion-dollar investment business ambitions.
-            </p>
-            <p className="text-navy-700 leading-relaxed">
-              In addition to the Chance Voight success, Bernard is also possibly one of the most explanatory speakers 
-              on the stock market in New Zealand today. Those that have heard him speak at one of his seminars have been 
-              fascinated by the way he thinks about the stock market and his deep value style.
-            </p>
-          </div>
-        }
-        imageSrc="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80"
-        imageAlt="Chance Voight Building"
-        overlayText="The Chance Voight Building"
-        overlaySubtext="29 High Street, Rangiora"
-        buttonText="Learn More About Chance Voight"
-        buttonLink="/chance-voight"
-        imageOnLeft={true}
-      />
-
-      {/* About Preview Section */}
+      {/* A Visionary Leader in Investment */}
       <section className="section-padding bg-navy-900 text-white">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -186,6 +150,63 @@ const Home = () => {
                 <p className="text-xl font-semibold">30+ Years</p>
                 <p className="text-sm">of Excellence</p>
               </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Quotes Section */}
+      <QuotesSection />
+
+      {/* Chance Voight Founder Section */}
+      <section className="section-padding bg-navy-900 text-white">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="relative"
+            >
+              <div className="aspect-w-4 aspect-h-5 rounded-xl overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80" 
+                  alt="Chance Voight Building" 
+                  className="object-cover w-full h-full rounded-xl"
+                />
+              </div>
+              <div className="absolute -bottom-6 -right-6 bg-gold-500 text-navy-900 font-serif p-4 rounded-lg">
+                <p className="text-xl font-semibold">The Chance Voight Building</p>
+                <p className="text-sm">29 High Street, Rangiora</p>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="space-y-6"
+            >
+              <h2 className="font-serif text-3xl md:text-4xl font-bold mb-4">Chance Voight Founder</h2>
+              <p className="text-gray-300 leading-relaxed">
+                Chance Voight was established in 2018 with the ambition to develop a profitable New Zealand hedge fund. 
+                Prior to his re-orientation towards the share market over a decade ago, Bernard accumulated extensive experience 
+                as a financier and investor in real estate transactions as well as building financial and investment-related businesses.
+              </p>
+              <p className="text-gray-300 leading-relaxed">
+                Currently several years into its development, Chance Voight has established itself as a trusted institution 
+                and has experienced a steep upward trajectory towards its billion-dollar investment business ambitions.
+              </p>
+              <p className="text-gray-300 leading-relaxed">
+                In addition to the Chance Voight success, Bernard is also possibly one of the most explanatory speakers 
+                on the stock market in New Zealand today. Those that have heard him speak at one of his seminars have been 
+                fascinated by the way he thinks about the stock market and his deep value style.
+              </p>
+              <Button asChild className="bg-gold-500 hover:bg-gold-600 text-navy-900 mt-4">
+                <Link to="/chance-voight">Learn More About Chance Voight</Link>
+              </Button>
             </motion.div>
           </div>
         </div>
