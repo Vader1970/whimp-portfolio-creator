@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Building, ChartBar, Globe, MessageSquare, ShieldCheck, Star, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -14,6 +13,7 @@ import {
 } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import InfoSection from '@/components/shared/InfoSection';
 
 const testimonials = [
   {
@@ -154,6 +154,31 @@ const ChanceVoight = () => {
           </div>
         </div>
       </section>
+
+      {/* Chance Voight Founder Section */}
+      <InfoSection 
+        title="Chance Voight Founder"
+        content={
+          <>
+            <p className="text-navy-700 leading-relaxed">
+              Chance Voight was established in 2018 with the ambition to develop a profitable New Zealand hedge fund. Prior to his re-orientation towards the share market over a decade ago, Bernard accumulated extensive experience as a financier and investor in real estate transactions as well as building financial and investment-related businesses. Chance Voight was founded as a result of Bernard's cumulative experience and an intensive decade of experience as a full-time professional share investor in the Australian stock market (ASX).
+            </p>
+            <p className="text-navy-700 leading-relaxed">
+              Currently several years into its development, Chance Voight has established itself as a trusted institution and has experienced a steep upward trajectory towards its billion-dollar investment business ambitions.
+            </p>
+            <p className="text-navy-700 leading-relaxed">
+              In addition to the Chance Voight success, Bernard is also possibly one of the most explanatory speakers on the stock market in New Zealand today. Those that have heard him speak at one of his seminars have been fascinated by the way he thinks about the stock market and his deep value style.
+            </p>
+          </>
+        }
+        imageSrc="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80"
+        imageAlt="The Chance Voight Building"
+        overlayText="The Chance Voight Building"
+        overlaySubtext="29 High Street, Rangiora"
+        buttonText="Learn More About Chance Voight"
+        buttonLink="/about"
+        imageOnLeft={true}
+      />
 
       {/* Investment Approach */}
       <section className="section-padding bg-navy-50">
