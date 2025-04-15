@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ArrowRight, Briefcase, Trophy, Users, BarChart4 } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -5,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import PageTransition from '@/components/PageTransition';
 import { motion } from 'framer-motion';
 import QuotesSection from '@/components/home/QuotesSection';
+import InfoSection from '@/components/shared/InfoSection';
 
 const Home = () => {
   return (
@@ -108,6 +110,38 @@ const Home = () => {
 
       {/* Quotes Section */}
       <QuotesSection />
+
+      {/* Chance Voight Founder Section */}
+      <InfoSection 
+        title="Chance Voight Founder"
+        content={
+          <div className="space-y-4">
+            <p className="text-navy-700 leading-relaxed">
+              Chance Voight was established in 2018 with the ambition to develop a profitable New Zealand hedge fund. 
+              Prior to his re-orientation towards the share market over a decade ago, Bernard accumulated extensive experience 
+              as a financier and investor in real estate transactions as well as building financial and investment-related businesses. 
+              Chance Voight was founded as a result of Bernard's cumulative experience and an intensive decade of experience 
+              as a full-time professional share investor in the Australian stock market (ASX).
+            </p>
+            <p className="text-navy-700 leading-relaxed">
+              Currently several years into its development, Chance Voight has established itself as a trusted institution 
+              and has experienced a steep upward trajectory towards its billion-dollar investment business ambitions.
+            </p>
+            <p className="text-navy-700 leading-relaxed">
+              In addition to the Chance Voight success, Bernard is also possibly one of the most explanatory speakers 
+              on the stock market in New Zealand today. Those that have heard him speak at one of his seminars have been 
+              fascinated by the way he thinks about the stock market and his deep value style.
+            </p>
+          </div>
+        }
+        imageSrc="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80"
+        imageAlt="Chance Voight Building"
+        overlayText="The Chance Voight Building"
+        overlaySubtext="29 High Street, Rangiora"
+        buttonText="Learn More About Chance Voight"
+        buttonLink="/chance-voight"
+        imageOnLeft={true}
+      />
 
       {/* About Preview Section */}
       <section className="section-padding bg-navy-900 text-white">
